@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8D94D22A7ACC60004BD387 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D94D12A7ACC60004BD387 /* DBHelper.swift */; };
+		CEA3E5E42A8BA8EC004B87FA /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3E5E32A8BA8EC004B87FA /* Expenses.swift */; };
+		CEA3E5E72A8BAC7C004B87FA /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3E5E62A8BAC7C004B87FA /* ExpensesViewController.swift */; };
 		CEBEA9D52A778360001AC115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEA9D42A778360001AC115 /* AppDelegate.swift */; };
 		CEBEA9D72A778360001AC115 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEA9D62A778360001AC115 /* SceneDelegate.swift */; };
-		CEBEA9D92A778360001AC115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEA9D82A778360001AC115 /* ViewController.swift */; };
+		CEBEA9D92A778360001AC115 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEA9D82A778360001AC115 /* HomeViewController.swift */; };
 		CEBEA9DC2A778360001AC115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEA9DA2A778360001AC115 /* Main.storyboard */; };
 		CEBEA9DE2A778362001AC115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBEA9DD2A778362001AC115 /* Assets.xcassets */; };
 		CEBEA9E12A778362001AC115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEA9DF2A778362001AC115 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE8D94D12A7ACC60004BD387 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		CEA3E5E32A8BA8EC004B87FA /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		CEA3E5E62A8BAC7C004B87FA /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		CEBEA9D12A778360001AC115 /* PBMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBEA9D42A778360001AC115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBEA9D62A778360001AC115 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEBEA9D82A778360001AC115 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEBEA9D82A778360001AC115 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CEBEA9DB2A778360001AC115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEBEA9DD2A778362001AC115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBEA9E02A778362001AC115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE8D94D02A7ACC3E004BD387 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D94D12A7ACC60004BD387 /* DBHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CEA3E5E22A8BA87F004B87FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA3E5E32A8BA8EC004B87FA /* Expenses.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA3E5E52A8BAC4A004B87FA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEBEA9D82A778360001AC115 /* HomeViewController.swift */,
+				CEA3E5E62A8BAC7C004B87FA /* ExpensesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		CEBEA9C82A778360001AC115 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +87,11 @@
 		CEBEA9D32A778360001AC115 /* PBMS */ = {
 			isa = PBXGroup;
 			children = (
+				CEA3E5E22A8BA87F004B87FA /* Model */,
+				CEA3E5E52A8BAC4A004B87FA /* Controllers */,
+				CE8D94D02A7ACC3E004BD387 /* Helpers */,
 				CEBEA9D42A778360001AC115 /* AppDelegate.swift */,
 				CEBEA9D62A778360001AC115 /* SceneDelegate.swift */,
-				CEBEA9D82A778360001AC115 /* ViewController.swift */,
 				CEBEA9DA2A778360001AC115 /* Main.storyboard */,
 				CEBEA9DD2A778362001AC115 /* Assets.xcassets */,
 				CEBEA9DF2A778362001AC115 /* LaunchScreen.storyboard */,
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBEA9D92A778360001AC115 /* ViewController.swift in Sources */,
+				CEA3E5E42A8BA8EC004B87FA /* Expenses.swift in Sources */,
+				CEBEA9D92A778360001AC115 /* HomeViewController.swift in Sources */,
 				CEBEA9D52A778360001AC115 /* AppDelegate.swift in Sources */,
 				CEBEA9D72A778360001AC115 /* SceneDelegate.swift in Sources */,
+				CE8D94D22A7ACC60004BD387 /* DBHelper.swift in Sources */,
+				CEA3E5E72A8BAC7C004B87FA /* ExpensesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
